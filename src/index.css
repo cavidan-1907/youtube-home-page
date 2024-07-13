@@ -1,0 +1,8 @@
+/* Örnek: App.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+::-webkit-scrollbar {
+  @apply w-[10px] h-[10px];
+}
