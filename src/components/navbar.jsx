@@ -2,7 +2,7 @@
 import React from 'react';
 import { Youtube, List } from 'react-bootstrap-icons';
 import Comp from './comp';
-import ProfileImage from '../file.jpeg';
+import ProfileImage  from '../file.jpeg';
 import { BiLogoYoutube } from 'react-icons/bi';
 const Navbar = () => {
   return (
