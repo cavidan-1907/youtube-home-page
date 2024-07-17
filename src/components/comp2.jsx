@@ -1,12 +1,18 @@
 import React from 'react';
 import { BsFillPlayFill } from 'react-icons/bs';
-
+import { useState } from 'react';
 const VideoCard = () => {
   const placeholderImage = 'https://img.youtube.com/vi/T2Y03sQqz8I/0.jpg'; 
   const videoTitle = 'Tailwind + React';
   const channelTitle = 'Film Sayti';
-  const videoDuration = '12:34';
-
+  // const videoDuration = '19:34';
+const getDate= new Date();
+const minutes= getDate.getMinutes();
+const second= getDate.getSeconds();
+const [time, setTime]=useState();
+setInterval(() => {
+  setTime(`${minutes} : ${second}`)
+}, 1000);
   return (
     <div className='max-w-sm rounded-lg overflow-hidden shadow-lg bg-gray-900 relative group cursor-pointer'>
       <img
@@ -16,7 +22,7 @@ const VideoCard = () => {
       />
       <div className='absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300'>
         <BsFillPlayFill className='text-white text-6xl' />
-        <span className='absolute bottom-2 right-2 text-white text-sm'>{videoDuration}</span>
+        <span  className='absolute bottom-2 right-2 text-white text-sm'>{time}</span>
       </div>
       <div className='px-6 py-4'>
         <div className='font-bold text-xl mb-2 text-white'>{videoTitle}</div>

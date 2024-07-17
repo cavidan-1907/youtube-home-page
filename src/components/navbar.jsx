@@ -6,7 +6,7 @@ import ProfileImage from '../file.jpeg';
 import { BiLogoYoutube } from 'react-icons/bi';
 const Navbar = () => {
   return (
-    <nav className='border-r border-r-gray-200 flex flex-col w-[15%] max-h-screen  gap-6 overflow-x-auto p-[32px]'>
+    <nav className='border-r border-r-gray-200 flex flex-col w-[15%] max-h-screen   gap-6 overflow-x-auto p-[32px]'>
 
       <div className='flex items-center gap-2 cursor-pointer transition-all delay-100'>
         <List className='text-[30px] text-gray-500 hover:text-gray-900' />
